@@ -7,5 +7,5 @@ dash-html-components
 dash-core-components
 pandas
 numpy
-dash_table
+dash-table
 time
