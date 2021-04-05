@@ -46,6 +46,7 @@ def get_options(options):
 
 # Initialize the app
 app = dash.Dash(__name__)
+server = app.server
 
 marks_1 = {}
 for i in range(1,11):
