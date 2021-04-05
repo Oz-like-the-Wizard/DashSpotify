@@ -1,5 +1,5 @@
 import pandas as pd 
-import numpy as np
+#import numpy as np
 import dash
 import dash_html_components as html
 import dash_core_components as dcc
@@ -123,4 +123,5 @@ def update_graph(selected_range,selected_dropdown):
 
 if __name__ == '__main__':
     app.run_server(debug=True)
+
 
