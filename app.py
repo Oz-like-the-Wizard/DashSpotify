@@ -60,6 +60,7 @@ def get_options(options):
 
 # Initialize the app
 app = dash.Dash(__name__)
+server = app.server
 
 
 
