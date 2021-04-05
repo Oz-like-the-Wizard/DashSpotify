@@ -1,5 +1,4 @@
 import pandas as pd 
-#import numpy as np
 import dash
 import dash_html_components as html
 import dash_core_components as dcc
@@ -7,10 +6,10 @@ import plotly.express as px
 import plotly.graph_objects as go
 from dash.dependencies import Input, Output
 import dash_table
-import time
+#import time
 
 
-df = pd.read_csv("dashboard/data/data.csv")
+df = pd.read_csv("data.csv")
 df = df.loc[df["Position"]<11]
 df['Date'] = df['Date'].astype('datetime64[ns]')
 df_ready = df.groupby(["Date","Region","Track Name","Artist","Position"])[['danceability', 'energy', 'instrumentalness', 'valence','acousticness', 'liveness', 'speechiness',"tempo","duration_ms","Streams"]].agg("mean").reset_index()
